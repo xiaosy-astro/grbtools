@@ -2,19 +2,8 @@ import datetime
 from typing import Union, Dict, Optional
 import pandas as pd
 
-# --------------------------------------------------------------------------
-# 重要提示:
-# 为了让这个示例能够独立运行和理解，我们假设 `data` 模块中的处理器
-# (OpticalProcessor, XrayProcessor) 已经存在。
-# 
-# 实际项目中，你会使用下面的导入语句:
-# from ..data.optical_processor import OpticalProcessor
-# from ..data.xray_processor import XrayProcessor
-#
-# 这里我们只是为了演示 GRBEvent 类的结构。
-# --------------------------------------------------------------------------
 
-# 假设的处理器，实际应从 data 模块导入
+# 从 data 模块导入
 from ..data.optical_processor import OpticalProcessor
 from ..data.xray_processor import XrayProcessor
 
