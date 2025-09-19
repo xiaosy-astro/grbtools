@@ -8,3 +8,4 @@ from .grb_event import GRBEvent
 __all__ = [
     "GRBEvent"
 ]
+

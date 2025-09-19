@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grbtools"
+version = "0.1.0"
+description = "A Python tool for analyzing Gamma-Ray Burst light curves."
+readme = "README.md"
+authors = [
+    { name = "xiaosy-astro", email = "2867015019@qq.com" }
+]
+license = "MIT"
+requires-python = ">=3.8"
+keywords = ["astronomy", "gamma-ray-burst", "data-analysis", "astrophysics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics"
+]
+
+dependencies = [
+    "pandas",
+    "numpy",
+    "astropy",
+    "extinction",
+    "bilby",
+    "scipy"
+]
+
+[project.urls]
+Homepage = "https://github.com/xiaosy-astro/grbtools"
+Repository = "https://github.com/xiaosy-astro/grbtools.git"
+Issues = "https://github.com/xiaosy-astro/grbtools/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0"
+]
+
+[tool.setuptools]
+packages = ["grb_analyzer"]   # 这里直接指定包名
+
+[tool.black]
+line-length = 88
+target-version = ['py38']

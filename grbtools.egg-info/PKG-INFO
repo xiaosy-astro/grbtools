@@ -1,3 +1,33 @@
+Metadata-Version: 2.4
+Name: grbtools
+Version: 0.1.0
+Summary: A Python tool for analyzing Gamma-Ray Burst light curves.
+Author-email: xiaosy-astro <2867015019@qq.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/xiaosy-astro/grbtools
+Project-URL: Repository, https://github.com/xiaosy-astro/grbtools.git
+Project-URL: Issues, https://github.com/xiaosy-astro/grbtools/issues
+Keywords: astronomy,gamma-ray-burst,data-analysis,astrophysics
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: astropy
+Requires-Dist: extinction
+Requires-Dist: bilby
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+
 # grbtools
 
 ## 项目架构
